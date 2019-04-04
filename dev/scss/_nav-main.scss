@@ -1,0 +1,104 @@
+// Main Nav Styles
+.main-nav {
+    z-index: 888;
+    @include flatten;
+    @include flex-layout-row;
+
+    .navbar-brand {
+        @include flatten;
+
+        .navbar-brand-text {
+            @include mq($browser-narrow) {
+                display: none;
+            }
+        }
+
+        @include mq($tablet-portait) {
+            img {
+                width: 50px;
+                height: 50px;
+                padding: 0;
+            }
+
+            .navbar-brand-text {
+                display: inline;
+            }
+
+        }
+
+        @include mq($phone) {
+            img {
+                width: 50px;
+                height: 50px;
+                padding: 0;
+            }
+
+            .navbar-brand-text {
+                display: none;
+            }
+
+        }
+    }
+
+    .logo {
+        position: relative;
+        z-index: 900;
+        display: flex;
+        transition: all 0.3s ease;
+    }
+
+    @include mq($phone-wide) {
+
+        .logo {
+            visibility: hidden;
+        }
+    }
+
+    @include mq($tablet-landscape) {
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            padding: 0;
+        }
+
+        ul {
+            width: 550px;
+        }
+    }
+
+    ul {
+        @include flatten;
+        list-style: none;
+        display: flex;
+        width: 600px;
+
+        @include mq($tablet-portait) {
+            width: auto;
+        }
+    }
+
+    li {
+        padding-top: 40px;
+        text-align: center;
+        height: $header-height;
+        flex: 1;   
+        top: 0;        
+        
+        #{$link-hover-selector} {
+            background-color: rgba(lightgray, 0.3);
+            border-bottom: 3px solid red;
+        }
+
+        @include mq($tablet-portait) {
+            height: 80px;
+            padding-top: 20px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;        
+    }
+}

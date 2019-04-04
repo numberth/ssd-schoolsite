@@ -1,0 +1,27 @@
+// Body Styles
+body {
+    background-color: $bg-body-color;
+
+    .back-to-top {
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        z-index: 99; 
+        display: none;       
+        
+        .fas {
+            font-size: em(35);
+            color: gray;
+
+            &:hover {
+                color: navy;
+            }
+        }
+
+        @include mq($tablet-portait) {
+            bottom: 5px;
+            right: 5px; 
+        }
+    }
+}

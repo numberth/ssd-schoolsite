@@ -1,0 +1,47 @@
+// Footer Styles
+footer {
+    font-size: 14px;
+    text-align: center;
+    background-color: lightgray;
+    .footer-nav {      
+        padding: 20px 100px;  
+        ul {            
+            @include flatten;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+    
+        li {
+            text-align: center;
+            flex: 1;   
+            
+            #{$link-hover-selector} {
+                text-decoration: underline;
+            }
+
+            &:not(:last-child) {
+                border-right: 1px solid black;
+            }
+        }
+    
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;        
+        }
+
+        @include mq($tablet-portait) {
+            padding: 20px 60px;       
+        }
+    
+        @include mq($phone-wide) {
+            padding: 20px 30px; 
+        }
+    }
+
+    p {
+        margin: 0;
+        padding: 20px;
+    }    
+}

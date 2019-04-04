@@ -1,0 +1,118 @@
+// Banner Styles
+.banner {
+    position: relative;
+
+    img {
+        animation: fadeIn 1s ease both;
+    }
+
+    @include mq($phone) {
+        img{
+            max-width: $phone;
+            object-fit: cover;
+        }
+    }
+
+}
+
+.info-box {
+    position: absolute;
+    top: 70px;
+	left: 80px;
+	color: white;
+    animation: slideInLeft 1s 0.5s 1 ease both;        
+
+    .school {
+        @include flatten;
+        color: rgb(218, 218, 218);
+        font-size: 20px;
+        padding: 10px 0;
+        background-color: black;
+        text-align: center;
+    }
+
+    .h2 {
+        margin: 55px 0 40px;
+        font-weight: bold;
+        font-size: 45px;
+        text-shadow: 3px 3px 5px black;      
+    }
+
+    .type {
+        background-color: rgba(255, 168, 39, 0.7);
+        font-size: 20px;
+        padding: 3px 10px;
+        margin-right: 5px;
+    }
+
+    a {
+        color: white;
+    }
+
+    @include mq($tablet-landscape-medium) {
+        top: 40px;
+        left: 40px;
+        max-height: auto;
+        
+        .h2 {
+            font-size: 35px;
+            margin: 20px 0;
+        }
+
+        .school {
+            font-size: 20px;
+            padding: 5px 0;
+        }
+
+        .type {
+            font-size: 20;
+            padding: 3px 5px;
+        }
+    }
+
+    @include mq($phone-wide) {
+        top:20px;
+        left: 20px;
+        max-height: auto;
+        
+        .h2 {
+            font-size: 25px;
+            margin: 10px 0;
+        }
+
+        .school {
+            font-size: 14px;
+            padding: 5px 0;
+        }
+
+        .type {
+            font-size: 14px;
+            padding: 3px 5px;
+        }
+    }    
+}
+
+// Banner Image Animation Keyframes
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	
+	to {
+		opacity: 1;
+	}
+}
+
+// Info Box Animation Keyframes
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+	opacity: 0;
+    visibility: visible;
+  }
+
+  to {
+    transform: translatX(0);
+ 	opacity: 1;
+  }
+}
