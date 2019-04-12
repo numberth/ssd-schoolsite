@@ -1,25 +1,25 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-// const autoprefixer = require('autoprefixer');
+const autoprefixer = require('autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
-// const useref = require('gulp-useref');
-// const uglify = require('gulp-uglify');
-// const composer = require('gulp-uglify/composer');
-// const uglifyES = require('uglify-es');
-// const postcss = require('gulp-postcss');
-// const gulpIf = require('gulp-if');
-// const htmlMin = require('gulp-htmlmin');
-// const cssnano = require('cssnano');
-// const imageMin = require('gulp-imagemin');
-// const cache = require('gulp-cache');
-// const del = require('del');
-// const runSequence = require('run-sequence');
-// const rev = require('gulp-rev');
-// const revReplace = require('gulp-rev-replace');
-// const filter = require('gulp-filter');
+const useref = require('gulp-useref');
+const uglify = require('gulp-uglify');
+const composer = require('gulp-uglify/composer');
+const uglifyES = require('uglify-es');
+const postcss = require('gulp-postcss');
+const gulpIf = require('gulp-if');
+const htmlMin = require('gulp-htmlmin');
+const cssnano = require('cssnano');
+const imageMin = require('gulp-imagemin');
+const cache = require('gulp-cache');
+const del = require('del');
+const runSequence = require('run-sequence');
+const rev = require('gulp-rev');
+const revReplace = require('gulp-rev-replace');
+const filter = require('gulp-filter');
 
-// const minify = composer(uglifyES);
+const minify = composer(uglifyES);
 
 // Intro Hello Task...
 gulp.task('hello', function() {
