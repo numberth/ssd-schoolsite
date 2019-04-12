@@ -7,8 +7,8 @@
 	<title>BCIT Software System Developer</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="styles/custom-styles.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
@@ -19,19 +19,15 @@
 		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 		crossorigin="anonymous"></script>
 	<script src="scripts/script.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet"> 
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/students.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
 	<div class="wrapper">
 		<nav class="navbar navbar-expand-md navbar-light justify-content-between main-nav">
 			<div class="container">
-				<!-- <a href="#0" class="logo">
-							<img src="images/bcit-logo.jpg" alt="BCIT Logo">
-						</a> -->
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand" href="index.html">
 					<img src="images/bcit-logo.jpg" class="d-inline-block align-center" alt="">
 					<span class="navbar-brand-text">Software Systems Developer</span>
 				</a>
@@ -42,8 +38,20 @@
 
 				<div class="collapse navbar-collapse text-center" id="navbarNav">
 					<ul class="navbar-nav mx-auto flex-nowrap">
-						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-						<li class="nav-item"><a class="nav-link" href="#0">Overview</a></li>
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="overview.html" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Overview <br />
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="overview.html#program_overview">Overview</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="overview.html#program_entry">Program Entry</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="overview.html#apply_now">Apply Now</a>
+							</div>
+						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -56,61 +64,146 @@
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="students.html">Students</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Resources</a>
+								<a class="dropdown-item" href="resources.html">Resources</a>
 							</div>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="#0">Courses</a></li>
-						<li class="nav-item"><a class="nav-link" href="#0">Contacts</a></li>
+						<li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+						<li class="nav-item active"><a class="nav-link" href="contacts.html">Contacts</a></li>
 					</ul>
 				</div>
 		</nav>
 		<main>
-            <h3 class="header">Current Students</h3>
-            <div class="list">
-                <div class="listHeader">
-                    <ul>
-                        <li>First Name</li>
-                        <li>Last Name</li>
-                        <li>Email</li>
-                    </ul>
-                </div>
-                <div class="studentList">
-                <div class="student">	<div class="firstName">	Alison	</div>	<div class="lastName">	Accardo	</div>	<div class="email">	aaccardo802@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Lai	</div>	<div class="lastName">	Aigner	</div>	<div class="email">	laigner578@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Monet 	</div>	<div class="lastName">	Barrette	</div>	<div class="email">	mbarrette802@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Marissa	</div>	<div class="lastName">	Barrow	</div>	<div class="email">	mbarrow208@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Michael	</div>	<div class="lastName">	Burriss	</div>	<div class="email">	mburriss817@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Clare	</div>	<div class="lastName">	Chou	</div>	<div class="email">	cchou502@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Jacalyn	</div>	<div class="lastName">	Christian	</div>	<div class="email">	jchristian175@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Taren	</div>	<div class="lastName">	Crowther	</div>	<div class="email">	tcrowther216@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Walter	</div>	<div class="lastName">	Heisenberg	</div>	<div class="email">	wheisenberg@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Shira	</div>	<div class="lastName">	Hyche	</div>	<div class="email">	shyche702@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Flossie	</div>	<div class="lastName">	Iser	</div>	<div class="email">	fiser123@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Karpinder	</div>	<div class="lastName">	Kaur	</div>	<div class="email">	kkaur372@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Kayla	</div>	<div class="lastName">	Kim	</div>	<div class="email">	akim802@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Margot	</div>	<div class="lastName">	Lawyer	</div>	<div class="email">	mlawyer203@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Jessica	</div>	<div class="lastName">	Lee	</div>	<div class="email">	jlee785@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Phyliss	</div>	<div class="lastName">	Mcswain	</div>	<div class="email">	pmcwain@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Alonso	</div>	<div class="lastName">	Olberding	</div>	<div class="email">	aolberding182@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Trisha	</div>	<div class="lastName">	Park	</div>	<div class="email">	tpark302@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Melissa	</div>	<div class="lastName">	Reira	</div>	<div class="email">	mreira785@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Mathew 	</div>	<div class="lastName">	Sibley	</div>	<div class="email">	msibley712@my.bcit.ca	</div></div>
-                <div class="student">	<div class="firstName">	Lourdes	</div>	<div class="lastName">	Spataro	</div>	<div class="email">	lspataro161@my.bcit.ca	</div></div>				
-            </div>
-            </div>
-        </main>
+			<h3 class="header">Current Students</h3>
+			<div class="list">
+				<div class="listHeader">
+					<ul>
+						<li>First Name</li>
+						<li>Last Name</li>
+						<li>Email</li>
+					</ul>
+				</div>
+				<div class="studentList">
+					<div class="student">
+						<div class="firstName"> Alison </div>
+						<div class="lastName"> Accardo </div>
+						<div class="email"> aaccardo802@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Lai </div>
+						<div class="lastName"> Aigner </div>
+						<div class="email"> laigner578@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Monet </div>
+						<div class="lastName"> Barrette </div>
+						<div class="email"> mbarrette802@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Marissa </div>
+						<div class="lastName"> Barrow </div>
+						<div class="email"> mbarrow208@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Michael </div>
+						<div class="lastName"> Burriss </div>
+						<div class="email"> mburriss817@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Clare </div>
+						<div class="lastName"> Chou </div>
+						<div class="email"> cchou502@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Jacalyn </div>
+						<div class="lastName"> Christian </div>
+						<div class="email"> jchristian175@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Taren </div>
+						<div class="lastName"> Crowther </div>
+						<div class="email"> tcrowther216@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Walter </div>
+						<div class="lastName"> Heisenberg </div>
+						<div class="email"> wheisenberg@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Shira </div>
+						<div class="lastName"> Hyche </div>
+						<div class="email"> shyche702@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Flossie </div>
+						<div class="lastName"> Iser </div>
+						<div class="email"> fiser123@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Karpinder </div>
+						<div class="lastName"> Kaur </div>
+						<div class="email"> kkaur372@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Kayla </div>
+						<div class="lastName"> Kim </div>
+						<div class="email"> akim802@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Margot </div>
+						<div class="lastName"> Lawyer </div>
+						<div class="email"> mlawyer203@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Jessica </div>
+						<div class="lastName"> Lee </div>
+						<div class="email"> jlee785@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Phyliss </div>
+						<div class="lastName"> Mcswain </div>
+						<div class="email"> pmcwain@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Alonso </div>
+						<div class="lastName"> Olberding </div>
+						<div class="email"> aolberding182@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Trisha </div>
+						<div class="lastName"> Park </div>
+						<div class="email"> tpark302@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Melissa </div>
+						<div class="lastName"> Reira </div>
+						<div class="email"> mreira785@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Mathew </div>
+						<div class="lastName"> Sibley </div>
+						<div class="email"> msibley712@my.bcit.ca </div>
+					</div>
+					<div class="student">
+						<div class="firstName"> Lourdes </div>
+						<div class="lastName"> Spataro </div>
+						<div class="email"> lspataro161@my.bcit.ca </div>
+					</div>
+				</div>
+			</div>
+		</main>
 		<footer>
 			<nav class="footer-nav">
 				<ul>
-					<li><a href="#0">Contact</a></li>
-					<li><a href="#0">Privacy</a></li>
-					<li><a href="#0">Legal</a></li>
+					<li><a href="contacts.html">Contact</a></li>
+					<li><a href="https://www.bcit.ca/privacy/">Privacy</a></li>
+					<li><a href="https://www.bcit.ca/copyright/">Legal</a></li>
 				</ul>
 			</nav>
 			<p class="copyright">&copy; 2019 BCIT</p>
 		</footer>
 	</div><!-- end wrapper -->
-	<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button" data-toggle="tooltip" data-placement="left"><span class="fas fa-arrow-up"></span></a>
+	<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button" data-toggle="tooltip"
+		data-placement="left"><span class="fas fa-arrow-up"></span></a>
 </body>
 
 </html>
