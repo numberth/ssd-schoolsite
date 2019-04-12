@@ -3,6 +3,7 @@
     z-index: 888;
     @include flatten;
     @include flex-layout-row;
+    background-color: lightgray;
 
     .navbar-brand {
         @include flatten;
@@ -86,12 +87,12 @@
         top: 0;        
         
         #{$link-hover-selector} {
-            background-color: rgba(lightgray, 0.3);
-            border-bottom: 3px solid red;
+            background-color: rgba(white, 0.5);
+            border-bottom: 3px solid orange;
         }
 
         @include mq($tablet-portait) {
-            height: 80px;
+            height: auto;
             padding-top: 20px;
         }
     }
