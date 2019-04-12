@@ -17,13 +17,7 @@
         text-align: center;
         grid-row: 1;
         grid-column: span 2;
-    }
-
-    .tagline {
-        font-family: 'Source Code Pro', monospace;
-        font-weight: bold;
-        color: navy;
-    }      
+    }          
 
     .intro {
         grid-column: 1 / span 2;
@@ -34,7 +28,7 @@
     }
 
     table {
-        max-width: 600px;
+        max-width: 700px;
         @include center;
     }
 
@@ -46,6 +40,7 @@
         }
 
         article {
+            margin: 20px 0;
             padding: 0;
         }
     }
