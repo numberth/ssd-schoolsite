@@ -17,10 +17,15 @@ function topFunction() {
 } 
 
 function validateForm(){
-  console.log("validate form")
-  if(formIsValid()){
-    document.getElementById("formCorrect").click();
-  }else{
+  $("form").on('submit',function(e){
+    e.preventDefault();
+  });
+
+  if(formIsValid()){    
+    document.getElementById("formCorrect").click();    
+  }
+  
+  if(!formIsValid()){
     document.getElementById("formIncorrect").click();
   }   
 }
@@ -41,5 +46,6 @@ function formIsValid(){
     if (atpos < 1 || ( dotpos - atpos < 2 )) {
        return false;
     }
-    return( true ); 
+
+    return true;
 }
