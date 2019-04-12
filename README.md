@@ -53,6 +53,9 @@ $ sudo npm install gulp -g
 
 ```shell
 $ npm install gulp -g
+npm install gulp-sass --save-dev
+npm install gulp-sourcemaps --save-dev
+npm install browser-sync --save-dev
 ```
 ### 3. Install this Repo's Node.js Dependencies
 
