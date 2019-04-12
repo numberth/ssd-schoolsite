@@ -1,0 +1,78 @@
+.header {
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .listHeader ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      width: 100%;
+      flex: 1;
+      background-color: grey;
+      border-right: 1px white solid;
+      color: white;
+      text-align: center;
+    }
+  }
+  
+  .student {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2px;
+    background-color: rgb(204, 204, 204);
+    border: black 1px solid;
+  }
+  
+  .firstName, .lastName, .email {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .list {
+    padding: 0 20px 20px 20px;
+  }
+  
+  @media (max-width: 610px) {
+    .listHeader {
+      display: none;
+    }
+    .student {
+      flex-wrap: wrap;
+      flex-direction: inherit;
+      padding-left: 20px;
+    }
+    .firstName {
+      text-align: inherit;
+      width: auto;
+      flex: none;
+      padding-right: 10px;
+      font-weight: bold;
+    }
+    .lastName {
+      text-align: inherit;
+      width: 30%;
+      flex: none;
+      font-weight: bold;
+    }
+    .email {
+      text-align: inherit;
+      flex: none;
+      width: 100%;
+      font-style: italic;
+    }
+  }
+  
+  @media (max-width: 610px) {
+    .lastName {
+      text-align: inherit;
+      width: 60%;
+      flex: none;
+    }
+  }

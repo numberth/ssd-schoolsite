@@ -1,0 +1,219 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.dow{
+    display:none;
+}
+
+.button{
+    background-color: blue;
+    color:white;
+    margin-left: 20px;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+.month{
+    margin: 10px;
+}
+
+.week{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 10px;
+    align-content: space-between;
+    grid-gap:5px;
+}
+
+div{
+    display:block;
+}
+
+.dayOfWeek{
+    width:100%;
+    display: flex;
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+.dayOfWeek li{
+    width:100%;
+    flex:1;
+    background-color: grey;
+    border-right: 1px white solid
+}
+
+.dayOfWeek li{
+    color:white;
+    text-align: center;
+}
+
+.day{
+    /* padding:10px; */
+    border: black 1px solid;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(204, 204, 204);
+    position: relative;
+
+}
+
+.date{
+    /* display:none; */
+    text-align: center;
+    background-color: darkcyan;
+
+    
+}
+
+.endDate{
+    /* display:none; */
+    text-align: center;
+    background-color: darkcyan;
+
+    
+}
+
+.theClass{
+    /* display: none; */
+    text-align: center;
+    padding-top: 5px;
+    flex:1;
+}
+
+.instructor{
+    /* display:none */
+    padding-top: 10px;
+    /* position: absolute; */
+    text-align: center;
+}
+
+@media(max-width: 1000px){
+    .week{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .dayOfWeek{
+        display:none;
+    }
+
+    .month{
+        margin:0;
+    }
+    
+    .dow{
+        display:inherit;
+        flex: 1;
+        justify-content: center;
+        margin: auto;
+    }
+    .day{
+        flex-direction: row;
+        height: 50px;
+        width: 100%;
+        padding: 0;
+        margin: 2px;
+    }
+
+    .instructor{
+        padding: 12px;
+        flex: 2;
+        position: inherit;
+        /* text-align: center; */
+        right: 0;
+        bottom: 0;
+        border: black solid 1px;
+        background-color: rgb(56, 56, 136);
+        color: rgb(231, 231, 231);
+        padding: auto;
+    }
+
+    .theClass{
+        flex: 3;
+        padding: 0 10px;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .filler{
+        flex: 1;
+        display:none;
+        width: 10%;
+    }
+    
+    .date{
+        padding-top:14px;
+        text-align: center;
+        background-color: rgb(126, 103, 103);
+        color: white;
+        width: 15%;
+        flex: 1;
+    }
+
+    .endDate{
+        padding-top:14px;
+        text-align: center;
+        background-color: rgb(126, 103, 103);
+        color: white;
+        width: 15%;
+        flex: 1;
+    }
+}
+
+@media(max-width: 860px){
+    .endDate{
+        padding-top:0;
+    }
+}
+
+@media(max-width: 650px){
+    .day{
+        flex-direction:column;
+        height: auto;
+    }
+
+    .theClass{
+        align-content: flex-start;
+        margin: 0;
+        /* justify-content: inherit; */
+        text-align: inherit;
+    }
+
+    .date{
+        background-color: rgb(204, 204, 204);
+        color:black;
+        padding:0 10px;
+    }
+    
+    .instructor{
+        background-color: rgb(204, 204, 204);
+        border:none;
+        color: black;
+        width:100%;
+        padding:none;
+        text-align:inherit;
+        padding:0 10px;
+    }
+
+    .month h3{
+        width:100%;
+        text-align: center;
+        background-color: black;
+        color:white;
+        height:100%;
+        margin:0;
+    }
+
+    .button{
+        display:none;
+    }
+
+}
