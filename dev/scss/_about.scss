@@ -1,10 +1,16 @@
 // About Styles
 .about {
     @include center;
+    max-width: $wrapper-padding;
     padding: 0 30px;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
+
+    .emphasize {
+        font-weight: bold;
+        color: navy;
+    }
 
     h3 {
         margin-top: 20px;
@@ -17,10 +23,19 @@
         font-family: 'Source Code Pro', monospace;
         font-weight: bold;
         color: navy;
-    }  
+    }      
+
+    .intro {
+        grid-column: 1 / span 2;
+    }
 
     article {
-        padding: 20px;
+        padding: 20px;        
+    }
+
+    table {
+        max-width: 600px;
+        @include center;
     }
 
     @include mq($tablet-portait) {

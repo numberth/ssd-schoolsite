@@ -1,7 +1,7 @@
 // Header Styles
 header {
     @include flex-layout-row;
-    height: $header-height;
+    height: $header-height;    
 
     .logo {
         box-shadow: 0 1px 6px 0 rgba(black, 0.25);
