@@ -1,4 +1,5 @@
-* {
+.calender-view{
+  * {
     box-sizing: inherit;
     &:before, &:after {
       box-sizing: inherit;
@@ -193,3 +194,5 @@
       display: none;
     }
   }
+}
+
