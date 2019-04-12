@@ -1,0 +1,71 @@
+.staffList {
+    margin: 0 5% 0 5%;
+  }
+  
+  .staff {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    padding-left: 0;
+    margin-left: 0;
+    background: rgb(204, 204, 204);
+    div {
+      flex: 1;
+      margin: auto;
+      text-align: center;
+      /* border-right: 1px solid black; */
+      padding: 10px;
+      height: 100%;
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+  
+  .header {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    /* margin: 10px; */
+  }
+  
+  main h2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;
+  }
+  
+  .header li {
+    flex: 1;
+    text-align: center;
+    background-color: grey;
+    margin: 2px;
+    color: white;
+  }
+  
+  @media (max-width: 900px) {
+    .staff {
+      flex-direction: column;
+    }
+    .header {
+      display: none;
+    }
+    .name {
+      color: black;
+      font-weight: bold;
+    }
+    .staff div {
+      border: none;
+    }
+    .title {
+      font-style: italic;
+    }
+    .staff div {
+      padding: 5px;
+    }
+    .email {
+      color: rgb(75, 75, 243);
+    }
+  }
