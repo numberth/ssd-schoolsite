@@ -3,5 +3,9 @@ table {
         height: 50px;
         width: auto;
         padding-right: 10px;
+    }    
+
+    .table th {
+        border-top: 0 !important;
     }
 }
