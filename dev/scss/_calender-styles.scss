@@ -9,10 +9,17 @@
     display: none;
   }
   
+  body h2 {
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+  }
+  
   .button {
     background-color: blue;
     color: white;
-    margin-left: 20px;
+    margin: 0px 0 20px 20px;
+    font-weight: bold;
   }
   
   button:active {
@@ -22,6 +29,9 @@
   
   .month {
     margin: 10px;
+    h3 {
+      padding-left: 20px;
+    }
   }
   
   .week {
